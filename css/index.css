@@ -6,3 +6,12 @@ h1, h2, h3 {
     max-width: 900px;
     margin: auto;
 }
+
+.main_content .fgmt li {
+    display: inline-block;
+    background-color: #dddddd;
+}
+.main_content .fgmt li:hover {
+    background-color: #bbbbbb;
+    color: #ffffff;
+}
