@@ -10,8 +10,12 @@ h1, h2, h3 {
 .main_content .fgmt li {
     display: inline-block;
     background-color: #dddddd;
+    padding: 3px 5px 3px 5px;
 }
 .main_content .fgmt li:hover {
     background-color: #bbbbbb;
+}
+
+.main_content .fgmt li:hover a {
     color: #ffffff;
 }
