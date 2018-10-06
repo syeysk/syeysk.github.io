@@ -2,6 +2,11 @@ h1, h2, h3 {
     text-align: center;
 }
 
+h3 {
+    color: #616060;
+    background: #f3f0f0;
+}
+
 .main_content {
     max-width: 900px;
     margin: auto;
