@@ -60,32 +60,46 @@
                 </li>
             </ol>
         </div>
-        
-        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfps')">WiFi Power Strip</h3>
-        
-        <div class="tabcontent" id="tab_content_wfps">
+
+        <div class="product_header">
+            <h3>WiFi Power Strip</h3>
+            <div class="head_photo"><img src="/images/head_photos/wfps.png"/></div>
             <ul class="fgmt">
                 <li><a href="https://github.com/syeysk/wfps_fgmt_pcb" target="_blank">PCB</a></li>
             </ul>
+            <br>
+            <span class="tablinks" onclick="openCity(event, 'tab_content_wfps')">Show description...</span>
+        </div>
+        
+        <div class="tabcontent" id="tab_content_wfps">
         </div>
 
-        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfnli')">WiFi NightLight Infinity</h3>
-        
-        <div class="tabcontent" id="tab_content_wfnli">
-        
+        <div class="product_header">
+            <h3>WiFi NightLight Infinity</h3>
+            <div class="head_photo"><img src="/images/head_photos/wfnli.png"/></div>
             <ul class="fgmt">
                 <li><a href="https://github.com/syeysk/wfnli_fgmt_pcb" target="_blank">PCB</a></li>
                 <li><a href="https://github.com/syeysk/wfnli_fgmt_programm" target="_blank">Arduino</a></li>
                 <li><a href="https://github.com/syeysk/wfnli_fgmt_webif" target="_blank">Web IF</a></li>
             </ul>
+            <br>
+            <span class="tablinks" onclick="openCity(event, 'tab_content_wfnli')">Show description...</span>
+        </div>
+        
+        <div class="tabcontent" id="tab_content_wfnli">
         </div>
 
-        <h3 class="tablinks" onclick="openCity(event, 'tab_content_termo_relay')">Termo Relay</h3>
-        
-        <div class="tabcontent" id="tab_content_termo_relay">
+        <div class="product_header">
+            <h3>Termo Relay</h3>
+            <div class="head_photo"><img src="/images/head_photos/termo_relay.png"/></div>
             <ul class="fgmt">
                 <li><a href="https://github.com/syeysk/termo_relay_fgmt_pcb" target="_blank">PCB</a></li>
             </ul>
+            <br>
+            <span class="tablinks" onclick="openCity(event, 'tab_content_termo_relay')">Show description...</span>
+        </div>
+        
+        <div class="tabcontent" id="tab_content_termo_relay">
         </div>
 
         
@@ -149,9 +163,11 @@ openCity(); // hide all contents
     
 .fgmt {
     display: inline-block;
+    vertical-align: top;
 }
 .head_photo {
     display: inline-block;
+    vertical-align: top;
 }
 .head_photo img {
     width:100px;
