@@ -38,3 +38,35 @@ img {
 .visible_block {
     display: block;
 }
+
+/* //////////////////////////////////////// */
+
+.fgmt {
+
+}
+.head_photo {
+    display: inline-block;
+    vertical-align: top;
+}
+.head_photo img {
+    width:100px;
+    height: auto;
+}
+
+.tabcontent {
+    animation: fadeEffect 8s; /* Fading effect takes 1 second */
+    overflow-y: hidden;
+    transition: max-height 8s;
+}
+.tablinks {
+    cursor: pointer;
+    text-align:right;
+    width:100%;
+    display: inline-block;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {max-height: 0;}
+    to {max-height: 10000px;}
+}
