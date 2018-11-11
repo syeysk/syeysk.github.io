@@ -42,7 +42,8 @@ img {
 /* //////////////////////////////////////// */
 
 .fgmt {
-
+    display: inline-block;
+    vertical-align: top;
 }
 .head_photo {
     display: inline-block;
