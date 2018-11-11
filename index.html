@@ -22,56 +22,66 @@
 
         <h2>Products</h2>
 
-        <h3>WiFi Relay</h3>
+        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfr')">WiFi Relay</h3>
+        
+        <div class="tabcontent" id="tab_content_wfr">
 
-        <ul class="fgmt">
-            <li><a href="https://github.com/syeysk/wfr_fgmt_pcb" target="_blank">PCB</a></li>
-            <li><a href="https://github.com/syeysk/wfr_fgmt_programm" target="_blank">Arduino</a></li>
-            <li><a href="https://github.com/syeysk/wfr_fgmt_webif" target="_blank">Web IF</a></li>
-            <li><a href="https://github.com/syeysk/wfr" target="_blank">All</a></li>
-        </ul>
+            <ul class="fgmt">
+                <li><a href="https://github.com/syeysk/wfr_fgmt_pcb" target="_blank">PCB</a></li>
+                <li><a href="https://github.com/syeysk/wfr_fgmt_programm" target="_blank">Arduino</a></li>
+                <li><a href="https://github.com/syeysk/wfr_fgmt_webif" target="_blank">Web IF</a></li>
+                <li><a href="https://github.com/syeysk/wfr" target="_blank">All</a></li>
+            </ul>
         
-        <h4>Manual to use</h4>
+            <h4>Manual to use</h4>
         
-        <ol>
-            <li>
-                Connect the board to power and connect any switches (transistor, triac, relay) to the board's channels
-                <br>
-                <img width="85%" src="/images/manuals/wfr0-3/scheme-connection/ready.jpg"/>
-            </li>
-            <li>
-                Take your smartphone and go into list of WI-FI-networks. Connect to "Syeysk_WFR" network
-                <br>
-                <img width="85%" src="/images/manuals/wfr0-3/wifi-connection/ready.png"/>
-            </li>
-            <li>
-                Open a browser you prefer. Go on the address http://192.168.4.1
-                <br>
-                <img width="85%" src="/images/manuals/wfr0-3/browser/ready.png"/>
-                <br>
-                You must see this screen. Press these buttons to turn on/off the board's channels
-            </li>
-        </ol>
+            <ol>
+                <li>
+                    Connect the board to power and connect any switches (transistor, triac, relay) to the board's channels
+                    <br>
+                    <img width="85%" src="/images/manuals/wfr0-3/scheme-connection/ready.jpg"/>
+                </li>
+                <li>
+                    Take your smartphone and go into list of WI-FI-networks. Connect to "Syeysk_WFR" network
+                    <br>
+                    <img width="85%" src="/images/manuals/wfr0-3/wifi-connection/ready.png"/>
+                </li>
+                <li>
+                    Open a browser you prefer. Go on the address http://192.168.4.1
+                    <br>
+                    <img width="85%" src="/images/manuals/wfr0-3/browser/ready.png"/>
+                    <br>
+                    You must see this screen. Press these buttons to turn on/off the board's channels
+                </li>
+            </ol>
+        </div>
         
-        <h3>WiFi Power Strip</h3>
+        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfps')">WiFi Power Strip</h3>
         
-        <ul class="fgmt">
-            <li><a href="https://github.com/syeysk/wfps_fgmt_pcb" target="_blank">PCB</a></li>
-        </ul>
+        <div class="tabcontent" id="tab_content_wfps">
+            <ul class="fgmt">
+                <li><a href="https://github.com/syeysk/wfps_fgmt_pcb" target="_blank">PCB</a></li>
+            </ul>
+        </div>
 
-        <h3>WiFi NightLight Infinity</h3>
+        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfnli')">WiFi NightLight Infinity</h3>
         
-        <ul class="fgmt">
-            <li><a href="https://github.com/syeysk/wfnli_fgmt_pcb" target="_blank">PCB</a></li>
-            <li><a href="https://github.com/syeysk/wfnli_fgmt_programm" target="_blank">Arduino</a></li>
-            <li><a href="https://github.com/syeysk/wfnli_fgmt_webif" target="_blank">Web IF</a></li>
-        </ul>
+        <div class="tabcontent" id="tab_content_wfnli">
+        
+            <ul class="fgmt">
+                <li><a href="https://github.com/syeysk/wfnli_fgmt_pcb" target="_blank">PCB</a></li>
+                <li><a href="https://github.com/syeysk/wfnli_fgmt_programm" target="_blank">Arduino</a></li>
+                <li><a href="https://github.com/syeysk/wfnli_fgmt_webif" target="_blank">Web IF</a></li>
+            </ul>
+        </div>
 
-        <h3>Termo Relay</h3>
-
-        <ul class="fgmt">
-            <li><a href="https://github.com/syeysk/termo_relay_fgmt_pcb" target="_blank">PCB</a></li>
-        </ul>
+        <h3 class="tablinks" onclick="openCity(event, 'tab_content_termo_relay')">Termo Relay</h3>
+        
+        <div class="tabcontent" id="tab_content_termo_relay">
+            <ul class="fgmt">
+                <li><a href="https://github.com/syeysk/termo_relay_fgmt_pcb" target="_blank">PCB</a></li>
+            </ul>
+        </div>
 
         
         <h2>Some tools. And about building the products at home</h2>
@@ -97,5 +107,51 @@
         
     </div>
 
+    <script type="text/javascript">
+// https://www.w3schools.com/howto/howto_js_tabs.asp
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+    
+    if (cityName){
+        if (document.getElementById(cityName).style.display == "block") {
+            document.getElementById(cityName).style.display = "none";
+            return;
+        }
+    }
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    if (cityName) document.getElementById(cityName).style.display = "block";
+    if (cityName) evt.currentTarget.className += " active";
+}
+openCity(); // hide all contents
+    </script>
+    
+    <style>
+.tabcontent {
+    animation: fadeEffect 8s; /* Fading effect takes 1 second */
+    overflow-y: hidden;
+    transition: max-height 8s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {max-height: 0;}
+    to {max-height: 10000px;}
+}
+    </style>
+    
 </body>
 </html>

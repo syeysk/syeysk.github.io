@@ -30,3 +30,11 @@ img {
 .main_content .fgmt li:hover a {
     color: #ffffff;
 }
+
+.hidden {
+    display: none;
+}
+
+.visible_block {
+    display: block;
+}
