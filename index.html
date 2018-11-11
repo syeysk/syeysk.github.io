@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Syeysk - open devices (LGPL-3.0)</title>
     <link rel="stylesheet" href="/css/index.css" />
-    <script type="text/javascript" src="/wbs_core/core_client/functions.js"></script>
+    <!--<script type="text/javascript" src="/wbs_core/core_client/functions.js"></script>-->
 </head>
 
 <body>
@@ -22,17 +22,22 @@
 
         <h2>Products</h2>
 
-        <h3 class="tablinks" onclick="openCity(event, 'tab_content_wfr')">WiFi Relay</h3>
-        
-        <div class="tabcontent" id="tab_content_wfr">
-
+        <div class="product_header">
+            <h3>WiFi Relay</h3>
+            <div class="head_photo"><img src="/images/head_photos/wfr.png"/></div>
             <ul class="fgmt">
                 <li><a href="https://github.com/syeysk/wfr_fgmt_pcb" target="_blank">PCB</a></li>
                 <li><a href="https://github.com/syeysk/wfr_fgmt_programm" target="_blank">Arduino</a></li>
                 <li><a href="https://github.com/syeysk/wfr_fgmt_webif" target="_blank">Web IF</a></li>
                 <li><a href="https://github.com/syeysk/wfr" target="_blank">All</a></li>
             </ul>
+            <br>
+            <span class="tablinks" onclick="openCity(event, 'tab_content_wfr')">Show description...</span>
+        </div>
         
+        <div class="tabcontent" id="tab_content_wfr">
+
+       
             <h4>Manual to use</h4>
         
             <ol>
@@ -140,11 +145,29 @@ openCity(); // hide all contents
     </script>
     
     <style>
+    
+    
+.fgmt {
+    display: inline-block;
+}
+.head_photo {
+    display: inline-block;
+}
+.head_photo img {
+    width:100px;
+    height: auto;
+}
+    
 .tabcontent {
     animation: fadeEffect 8s; /* Fading effect takes 1 second */
     overflow-y: hidden;
     transition: max-height 8s;
+}
+.tablinks {
     cursor: pointer;
+    text-align:center;
+    width:100%;
+    display: inline-block;
 }
 
 /* Go from zero to full opacity */
